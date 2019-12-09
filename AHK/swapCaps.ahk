@@ -6,7 +6,7 @@ ListLines Off
 ; SetCapsLockState, AlwaysOff
 Esc::Capslock
 
-Capslock::Esc
+Capslock Up::Send {Esc}
 Capslock & j::Send {Blind}{down}
 Capslock & k::Send {Blind}{up}
 Capslock & h::Send {Blind}{left}
