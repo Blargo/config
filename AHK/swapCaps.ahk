@@ -3,35 +3,13 @@
 SetBatchLines -1
 ListLines Off
 
-Capslock::Esc
+; SetCapsLockState, AlwaysOff
 Esc::Capslock
 
-^F1::Send {Media_Play_Pause}
-^F2::Send {Media_Prev}
-^F3::Send {Media_Next}
-
-<!j::Send {down}
-<!k::Send {up}
-<!h::Send {left}
-<!l::Send {right}
-<!+j::Send +{down}
-<!+k::Send +{up}
-<!+h::Send +{left}
-<!+l::Send +{right}
-<!^j::Send ^{down}
-<!^k::Send ^{up}
-<!^h::Send ^{left}
-<!^l::Send ^{right}
-<!#j::Send #{down}
-<!#k::Send #{up}
-<!#h::Send #{left}
-<!#l::Send #{right}
-<!+^j::Send +^{down}
-<!+^k::Send +^{up}
-<!+^h::Send +^{left}
-<!+^l::Send +^{right}
-
-<!u::Send {home}
-<!i::Send {end}
-<!+u::Send +{home}
-<!+i::Send +{end}
+Capslock::Esc
+Capslock & j::Send {Blind}{down}
+Capslock & k::Send {Blind}{up}
+Capslock & h::Send {Blind}{left}
+Capslock & l::Send {Blind}{right}
+Capslock & u::Send {Blind}{home}
+Capslock & i::Send {Blind}{end}
