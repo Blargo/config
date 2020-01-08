@@ -1,0 +1,19 @@
+chrome
+AHK
+vscode
+conemu
+git bash
+ditto
+7zip
+sublime
+switcheroo
+greenshot
+python
+postman
+meld
+shareX
+dbeaver
+spotify
+docker
+wsl
+# AltDrag
