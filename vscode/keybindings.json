@@ -1,0 +1,9 @@
+// Place your key bindings in this file to override the defaults
+[
+    { "key": "alt+q",              "command": "workbench.action.openNextRecentlyUsedEditorInGroup" },
+    { "key": "shift+alt+q",        "command": "workbench.action.openPreviousRecentlyUsedEditorInGroup" },
+    { "key": "alt+q",              "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen" },
+    { "key": "shift+alt+q",        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen" },
+]
