@@ -1,0 +1,13 @@
+{
+    "vim.useCtrlKeys": false,
+    "editor.formatOnPaste": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.snippetSuggestions": "top",
+    "workbench.colorTheme": "Monokai",
+    "editor.minimap.enabled": true,
+    "breadcrumbs.enabled": true,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "debug.console.fontSize": 12,
+    "terminal.integrated.fontWeightBold": "normal"
+}
