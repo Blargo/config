@@ -3,10 +3,10 @@
 SetBatchLines -1
 ListLines Off
 
-SetCapsLockState, Off
-; SetCapsLockState, AlwaysOff
+; SetCapsLockState, Off
+SetCapsLockState, AlwaysOff
 
-Esc::Capslock
+; Esc::Capslock
 ; Capslock Up::Send {Esc}
 Capslock::Send {Esc}
 

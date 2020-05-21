@@ -7,13 +7,16 @@ ditto
 7zip
 sublime
 switcheroo
-greenshot
+Greenshot / Sharex
 python
-postman
-meld
-shareX
-dbeaver
-spotify
+meld / WinMerge
 docker
 wsl
+Power Toys
+WinDirStat
+postman
+dbeaver
+spotify
+# Microsoft to-do
+# winmerge
 # AltDrag
