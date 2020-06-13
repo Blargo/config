@@ -1,0 +1,77 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+`",
+        "command": "-workbench.action.terminal.toggleTerminal"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+s",
+        "command": "-r.runSource",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "shift+alt+w",
+        "command": "workbench.action.terminal.toggleTerminal"
+    },
+    // {
+    //     "key": "escape",
+    //     "command": "closeFindWidget",
+    //     "when": "editorFocus && editorTextFocus"
+    // },
+    {
+        "key": "shift+escape",
+        "command": "closeFindWidget",
+        "when": "editorFocus && editorTextFocus"
+    },
+    {
+        "key": "tab",
+        "command": "tab",
+        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "shift+tab",
+        "command": "outdent",
+        "when": "editorFocus && vim.active && !inDebugRepl && vim.mode != 'Insert'"
+    },
+    {
+        "key": "alt+k",
+        "command": "workbench.action.navigateRight"
+    },
+    {
+        "key": "alt+j",
+        "command": "workbench.action.navigateLeft"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.datascience.runcurrentcelladvance",
+        "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.hascodecells && !editorHasSelection"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.datascience.execSelectionInteractive",
+        "when": "editorTextFocus && python.datascience.featureenabled && python.datascience.ownsSelection && !findInputFocussed && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    }
+]

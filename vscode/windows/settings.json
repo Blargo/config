@@ -1,13 +1,75 @@
 {
     "vim.useCtrlKeys": false,
     "editor.formatOnPaste": true,
-    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.multiCursorModifier": "alt",
     "editor.snippetSuggestions": "top",
     "workbench.colorTheme": "Monokai",
     "editor.minimap.enabled": true,
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "all",
+    "editor.renderWhitespace": "none",
     "debug.console.fontSize": 12,
-    "terminal.integrated.fontWeightBold": "normal"
+    "terminal.integrated.fontWeightBold": "normal",
+    "terminal.integrated.rendererType": "dom",
+    "window.zoomLevel": -1,
+    "cSpell.userWords": [
+        "MRSA",
+        "groupby",
+        "numpy",
+        "strftime",
+        "summarised"
+    ],
+    "autoDocstring.docstringFormat": "google",
+    "autoDocstring.quoteStyle": "'''",
+    "autoDocstring.startOnNewLine": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python"
+    },
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "meta.function-call.generic.python",
+                "settings": {
+                    "foreground": "#66D9EF"
+                }
+            }
+        ]
+    },
+    "[yaml]": {
+        "editor.insertSpaces": true,
+        "editor.tabSize": 4,
+        "editor.autoIndent": "full"
+    },
+    "workbench.iconTheme": "vscode-icons",
+    "editor.rulers": [
+        79,
+        100
+    ],
+    "pythonTestExplorer.testFramework": "pytest",
+    "python.testing.pytestEnabled": true,
+    "python.formatting.provider": "yapf",
+    "python.formatting.autopep8Args": ["--aggressive"],
+    "editor.fontSize": 13,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
+    "workbench.editor.highlightModifiedTabs": true,
+    "workbench.colorCustomizations": {
+        "tab.activeModifiedBorder": "#ff0000",
+        "tab.inactiveModifiedBorder": "#ff0000",
+        "tab.unfocusedActiveModifiedBorder": "#ff0000",
+        "tab.unfocusedInactiveModifiedBorder": "#ff0000",
+    },
+    "files.hotExit": "onExitAndWindowClose",
+    "files.trimTrailingWhitespace": true,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.accessibilitySupport": "off",
+    "[cpp]": {
+        "editor.defaultFormatter": "ms-vscode.cpptools"
+    },
+    "search.followSymlinks": false,
+    "git.githubAuthentication": false,
+    "remote.extensionKind": {
+        "ms-azuretools.vscode-docker": "workspace"
+    },
+    "editor.smoothScrolling": true,
 }
