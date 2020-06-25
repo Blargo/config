@@ -17,6 +17,7 @@ WinDirStat
 postman
 dbeaver
 spotify
+xnConvert
 # Microsoft to-do
 # winmerge
 # AltDrag
