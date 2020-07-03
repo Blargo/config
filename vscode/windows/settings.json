@@ -49,7 +49,7 @@
     "python.testing.pytestEnabled": true,
     "python.formatting.provider": "yapf",
     "python.formatting.autopep8Args": ["--aggressive"],
-    "editor.fontSize": 13,
+    "editor.fontSize": 12.8,
     "vsicons.dontShowNewVersionMessage": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.editor.highlightModifiedTabs": true,
@@ -72,4 +72,17 @@
         "ms-azuretools.vscode-docker": "workspace"
     },
     "editor.smoothScrolling": true,
+    "editor.mouseWheelScrollSensitivity": 3,
+    "python.analysis.logLevel": "Information",
+    "python.linting.enabled": false,
+    "python.dataScience.askForKernelRestart": false,
+    "python.dataScience.alwaysScrollOnNewCell": true,
+    "python.dataScience.changeDirOnImportExport": true,
+    "terminal.integrated.copyOnSelection": true,
+    "zenMode.hideLineNumbers": false,
+    "zenMode.fullScreen": false,
+    "zenMode.hideTabs": false,
+    "zenMode.centerLayout": false,
+    "workbench.editor.revealIfOpen": true,
+    "task.quickOpen.showAll": true
 }

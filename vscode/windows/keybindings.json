@@ -4,24 +4,16 @@
         "key": "ctrl+`",
         "command": "-workbench.action.terminal.toggleTerminal"
     },
-    {
-        "key": "alt+q",
-        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "shift+alt+q",
-        "command": "workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
-    },
-    {
-        "key": "alt+q",
-        "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
-    {
-        "key": "shift+alt+q",
-        "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
-        "when": "inEditorsPicker && inQuickOpen"
-    },
+    // {
+    //     "key": "alt+q",
+    //     "command": "workbench.action.quickOpenNavigateNextInEditorPicker",
+    //     "when": "inEditorsPicker && inQuickOpen"
+    // },
+    // {
+    //     "key": "shift+alt+q",
+    //     "command": "workbench.action.quickOpenNavigatePreviousInEditorPicker",
+    //     "when": "inEditorsPicker && inQuickOpen"
+    // },
     {
         "key": "ctrl+shift+s",
         "command": "-r.runSource",
@@ -73,5 +65,41 @@
         "key": "shift+enter",
         "command": "-python.execSelectionInTerminal",
         "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditor"
+    },
+    {
+        "key": "alt+q",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "shift+alt+q",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+    },
+    {
+        "key": "shift+ctrl+tab",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditor"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "shift+ctrl+tab",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inEditorsPicker && inQuickOpen"
     }
 ]
