@@ -13,6 +13,7 @@
     "terminal.integrated.rendererType": "dom",
     "window.zoomLevel": -1,
     "cSpell.userWords": [
+        "Apas",
         "MRSA",
         "groupby",
         "numpy",
@@ -20,7 +21,6 @@
         "summarised"
     ],
     "autoDocstring.docstringFormat": "google",
-    "autoDocstring.quoteStyle": "'''",
     "autoDocstring.startOnNewLine": true,
     "[python]": {
         "editor.defaultFormatter": "ms-python.python"
@@ -47,13 +47,17 @@
     ],
     "pythonTestExplorer.testFramework": "pytest",
     "python.testing.pytestEnabled": true,
-    "python.formatting.provider": "yapf",
+    "python.formatting.provider": "black",
     "python.formatting.autopep8Args": ["--aggressive"],
-    "editor.fontSize": 12.8,
+    "editor.fontSize": 13,
     "vsicons.dontShowNewVersionMessage": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.editor.highlightModifiedTabs": true,
     "workbench.colorCustomizations": {
+        "scrollbar.shadow": "#ff000000",
+        "minimap.background": "#27282288",
+        "minimapSlider.hoverBackground": "#99999933",
+        "minimapSlider.activeBackground": "#99999911",
         "tab.activeModifiedBorder": "#ff0000",
         "tab.inactiveModifiedBorder": "#ff0000",
         "tab.unfocusedActiveModifiedBorder": "#ff0000",
@@ -84,5 +88,10 @@
     "zenMode.hideTabs": false,
     "zenMode.centerLayout": false,
     "workbench.editor.revealIfOpen": true,
-    "task.quickOpen.showAll": true
+    "task.quickOpen.showAll": true,
+    "python.languageServer": "Pylance",
+    "python.analysis.typeCheckingMode": "basic",
+    "workbench.activityBar.visible": true,
+    "editor.minimap.maxColumn": 100,
+    "git.terminalAuthentication": false
 }
