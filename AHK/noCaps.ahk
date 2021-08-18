@@ -1,7 +1,11 @@
 #NoEnv
 #SingleInstance Force
+#InstallKeybdHook
 SetBatchLines -1
 ListLines Off
+
+if not A_IsAdmin
+    Run *RunAs "%A_ScriptFullPath%"
 
 ; SetCapsLockState, Off
 SetCapsLockState, AlwaysOff
@@ -16,6 +20,7 @@ Capslock & h::Send {Blind}{left}
 Capslock & l::Send {Blind}{right}
 Capslock & u::Send {Blind}{home}
 Capslock & i::Send {Blind}{end}
+CapsLock & m::WinMinimize, A
 
 ^F1::Send {Media_Play_Pause}
 ^F2::Send {Media_Prev}
