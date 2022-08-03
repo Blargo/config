@@ -1,0 +1,39 @@
+[http]
+	sslVerify = false
+[user]
+	email = michael.hermann@lbtinnovations.com
+	name = Michael Hermann
+[core]
+	editor = vim
+	autocrlf = false
+	hooksPath = /home/m/hooks-git
+	excludesfile = /home/m/.gitignore_global
+[submodule]
+	recurse = true
+[commit]
+	verbose = true
+[alias]
+	pf = push --force-with-lease
+	s = status
+	l = log --oneline --graph
+	b = branch --sort=-committerdate -a
+	co = checkout
+	f = fetch --all
+	rb = rebase
+    rf = reflog --date=iso
+    cp = cherry-pick
+    cm = commit
+#[credential]
+#	helper = store
+[pager]
+	status = true
+[filter "lfs"]
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+[credential]
+	helper = /mnt/c/Program\\ Files/Git/mingw64/libexec/git-core/git-credential-wincred.exe
+
+[diff]
+	algorithm = histogram

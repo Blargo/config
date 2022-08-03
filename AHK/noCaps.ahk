@@ -25,3 +25,15 @@ CapsLock & m::WinMinimize, A
 ^F1::Send {Media_Play_Pause}
 ^F2::Send {Media_Prev}
 ^F3::Send {Media_Next}
+
+<!F1::Send {Media_Play_Pause}
+<!F2::Send {Media_Prev}
+<!F3::Send {Media_Next}
+
+; Pause::Send {Media_Play_Pause}
+; ScrollLock::Send {Media_Prev}
+; Insert::Send {Media_Next}
+
+; RCtrl & Pause::Send {Pause}
+; RCtrl & ScrollLock::Send {ScrollLock}
+; RCtrl & Insert::Send {Insert}

@@ -45,11 +45,15 @@
     },
     {
         "key": "alt+k",
-        "command": "workbench.action.navigateRight"
+        "command": "workbench.action.navigateUp"
     },
     {
         "key": "alt+j",
-        "command": "workbench.action.navigateLeft"
+        "command": "workbench.action.navigateDown"
+    },
+    {
+        "key": "alt+l",
+        "command": "workbench.action.navigateRight"
     },
     {
         "key": "shift+enter",
@@ -112,22 +116,292 @@
         "command": "-closeParameterHints",
         "when": "editorFocus && parameterHintsVisible"
     },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenPreviousRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenLeastRecentlyUsedEditorInGroup"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "-workbench.action.quickOpenNavigateNextInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+shift+tab",
+        "command": "-workbench.action.quickOpenNavigatePreviousInEditorPicker",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
     // {
     //     "key": "ctrl+tab",
-    //     "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+    //     "command": "workbench.action.nextEditor"
     // },
     // {
-    //     "key": "shift+ctrl+tab",
-    //     "command": "workbench.action.quickOpenLeastRecentlyUsedEditor"
+    //     "key": "ctrl+pagedown",
+    //     "command": "-workbench.action.nextEditor"
     // },
     // {
-    //     "key": "ctrl+tab",
-    //     "command": "workbench.action.quickOpenNavigateNext",
-    //     "when": "inEditorsPicker && inQuickOpen"
+    //     "key": "ctrl+shift+tab",
+    //     "command": "workbench.action.previousEditor"
     // },
     // {
-    //     "key": "shift+ctrl+tab",
-    //     "command": "workbench.action.quickOpenNavigatePrevious",
-    //     "when": "inEditorsPicker && inQuickOpen"
-    // }
+    //     "key": "ctrl+pageup",
+    //     "command": "-workbench.action.previousEditor"
+    // },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenPreviousRecentlyUsedEditor"
+    },
+    {
+        "key": "shift+ctrl+tab",
+        "command": "workbench.action.quickOpenLeastRecentlyUsedEditor"
+    },
+    {
+        "key": "ctrl+tab",
+        "command": "workbench.action.quickOpenNavigateNext",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "shift+ctrl+tab",
+        "command": "workbench.action.quickOpenNavigatePrevious",
+        "when": "inEditorsPicker && inQuickOpen"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-extension.vim_ctrl+pagedown",
+        "when": "editorTextFocus && vim.active && vim.use<C-pagedown> && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+pageup",
+        "command": "-extension.vim_ctrl+pageup",
+        "when": "editorTextFocus && vim.active && vim.use<C-pageup> && !inDebugRepl"
+    },
+    {
+        "key": "f11",
+        "command": "workbench.action.toggleFullScreen",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "f11",
+        "command": "-workbench.action.toggleFullScreen"
+    },
+    {
+        "key": "shift+f11",
+        "command": "workbench.action.toggleZenMode",
+        "when": "!inDebugMode"
+    },
+    {
+        "key": "shift+f11",
+        "command": "-workbench.action.toggleZenMode"
+    },
+    {
+        "key": "ctrl+shift+d",
+        "command": "-editor.action.copyLinesDownAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.closeActiveEditor"
+    },
+    {
+        "key": "ctrl+f4",
+        "command": "-workbench.action.closeGroup",
+        "when": "activeEditorGroupEmpty && multipleEditorGroups"
+    },
+    {
+        "key": "ctrl+shift+f5",
+        "command": "workbench.action.debug.start",
+        "when": "debuggersAvailable && !inDebugMode"
+    },
+    {
+        "key": "Enter",
+        "command": "breadcrumbs.selectFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible && !(inDebugRepl && textInputFocus)"
+    },
+    {
+        "key": "enter",
+        "command": "-breadcrumbs.selectFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible"
+    },
+    {
+        "key": "Tab",
+        "command": "breadcrumbs.selectFocused",
+        "when": "breadcrumbsActive && breadcrumbsVisible && inDebugRepl && textInputFocus"
+    },
+    {
+        "key": "shift+enter",
+        "command": "editor.debug.action.selectionToRepl",
+        "when": "editorTextFocus && !findInputFocussed && !notebookEditorFocused && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !notebookEditorFocused && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "alt+h",
+        "command": "-gitlens.showQuickFileHistory",
+        "when": "!gitlens:disabled && config.gitlens.keymap == 'alternate'"
+    },
+    {
+        "key": "ctrl+alt+f5",
+        "command": "workbench.action.debug.selectandstart",
+        "when": "debuggersAvailable && !inDebugMode",
+    },
+    {
+        "key": "ctrl+d",
+        "command": "editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+d",
+        "command": "-editor.action.addSelectionToNextFindMatch",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+d",
+        "command": "extension.vim_ctrl+d",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-cursorUndo",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+u",
+        "command": "extension.vim_ctrl+u",
+        "when": "editorTextFocus && vim.active && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+u",
+        "command": "-extension.vim_ctrl+u",
+        "when": "editorTextFocus && vim.active && vim.use<C-u> && !inDebugRepl"
+    },
+    {
+        "key": "f8",
+        "command": "workbench.action.debug.continue",
+        "when": "inDebugMode"
+    },
+    {
+        "key": "alt+f8",
+        "command": "editor.action.marker.next",
+        "when": "!inDebugMode && editorFocus"
+    },
+    {
+        "key": "alt+f8",
+        "command": "-editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "f8",
+        "command": "editor.action.marker.nextInFiles",
+        "when": "!inDebugMode && editorFocus"
+    },
+    {
+        "key": "f8",
+        "command": "-editor.action.marker.nextInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+alt+f8",
+        "command": "editor.action.marker.prev",
+        "when": "!inDebugMode && editorFocus"
+    },
+    {
+        "key": "shift+alt+f8",
+        "command": "-editor.action.marker.prev",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+f8",
+        "command": "editor.action.marker.prevInFiles",
+        "when": "!inDebugMode && editorFocus"
+    },
+    {
+        "key": "shift+f8",
+        "command": "-editor.action.marker.prevInFiles",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+k ctrl+l",
+        "command": "-editor.action.transformToLowercase",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+a",
+        "command": "editor.emmet.action.incrementNumberByOne",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "alt+x",
+        "command": "editor.emmet.action.decrementNumberByOne",
+        "when": "editorTextFocus && !inDebugRepl"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "workbench.view.extension.gitlens"
+    },
+    {
+        "key": "ctrl+alt+c",
+        "command": "editor.action.clipboardCopyWithSyntaxHighlightingAction"
+    },
+    {
+        "key": "ctrl+pagedown",
+        "command": "-workbench.action.nextEditor"
+    },
+    {
+        "key": "escape",
+        "command": "-calva.clearInlineResults",
+        "when": "calva:keybindingsEnabled && editorTextFocus && !editorHasMultipleSelections && !editorHasSelection && !editorReadOnly && !hasOtherSuggestions && !parameterHintsVisible && !selectionAnchorSet && !suggestWidgetVisible && editorLangId == 'clojure'"
+    },
+    {
+        "key": "alt+s",
+        "command": "calva.clearInlineResults"
+    },
+    {
+        "key": "alt+m",
+        "command": "gitlens.toggleFileHeatmap"
+    },
+    {
+        "key": "alt+m",
+        "command": "-extension.minifyJSON"
+    },
+    {
+        "key": "alt+f",
+        "command": "gitlens.toggleFileChanges"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "-workbench.action.files.save"
+    },
+    {
+        "key": "ctrl+s",
+        "command": "workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+k ctrl+shift+s",
+        "command": "-workbench.action.files.saveWithoutFormatting"
+    },
+    {
+        "key": "ctrl+shift+;",
+        "command": "-breadcrumbs.focus",
+        "when": "breadcrumbsPossible"
+    }
 ]

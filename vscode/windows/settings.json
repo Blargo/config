@@ -1,21 +1,19 @@
 {
     "vim.useCtrlKeys": false,
-    "editor.formatOnPaste": true,
-    "editor.multiCursorModifier": "alt",
+    "editor.multiCursorModifier": "ctrlCmd",
     "editor.snippetSuggestions": "top",
     "workbench.colorTheme": "Monokai",
-    "editor.minimap.enabled": true,
     "breadcrumbs.enabled": true,
     "editor.renderControlCharacters": true,
-    "editor.renderWhitespace": "none",
-    "debug.console.fontSize": 12,
+    "editor.renderWhitespace": "all",
     "terminal.integrated.fontWeightBold": "normal",
     "terminal.integrated.rendererType": "dom",
-    "window.zoomLevel": -1,
     "cSpell.userWords": [
         "Apas",
         "MRSA",
         "groupby",
+        "iloc",
+        "itertools",
         "numpy",
         "strftime",
         "summarised"
@@ -23,7 +21,8 @@
     "autoDocstring.docstringFormat": "google",
     "autoDocstring.startOnNewLine": true,
     "[python]": {
-        "editor.defaultFormatter": "ms-python.python"
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.formatOnSave": true,
     },
     "editor.tokenColorCustomizations": {
         "textMateRules": [
@@ -32,7 +31,43 @@
                 "settings": {
                     "foreground": "#66D9EF"
                 }
-            }
+            },
+            // {
+            //     "scope": "entity.name.function.member.cpp",
+            //     "settings": {
+            //         "foreground": "#66D9EF",
+            //     }
+            // },
+            // {
+            //     "scope": "entity.name.function.call.cpp",
+            //     "settings": {
+            //         "foreground": "#66D9EF",
+            //     }
+            // },
+            // {
+            //     "scope": "entity.name.scope-resolution.function.definition.cpp",
+            //     "settings": {
+            //         "foreground": "#a6e22ec0",
+            //     }
+            // },
+            // {
+            //     "scope": "entity.name.scope-resolution.cpp",
+            //     "settings": {
+            //         "foreground": "#a6e22ec0",
+            //     }
+            // },
+            // {
+            //     "scope": "entity.name.scope-resolution.parameter.cpp",
+            //     "settings": {
+            //         "foreground": "#a6e22ec0",
+            //     }
+            // },
+            // {
+            //     "scope": "entity.name.scope-resolution.template.call.cpp",
+            //     "settings": {
+            //         "foreground": "#a6e22ec0",
+            //     }
+            // }
         ]
     },
     "[yaml]": {
@@ -42,14 +77,14 @@
     },
     "workbench.iconTheme": "vscode-icons",
     "editor.rulers": [
-        79,
-        100
+        88,
+        78
     ],
     "pythonTestExplorer.testFramework": "pytest",
-    "python.testing.pytestEnabled": true,
     "python.formatting.provider": "black",
-    "python.formatting.autopep8Args": ["--aggressive"],
-    "editor.fontSize": 13,
+    "python.formatting.autopep8Args": [
+        "--aggressive"
+    ],
     "vsicons.dontShowNewVersionMessage": true,
     "terminal.integrated.shell.windows": "C:\\Program Files\\Git\\bin\\bash.exe",
     "workbench.editor.highlightModifiedTabs": true,
@@ -62,23 +97,26 @@
         "tab.inactiveModifiedBorder": "#ff0000",
         "tab.unfocusedActiveModifiedBorder": "#ff0000",
         "tab.unfocusedInactiveModifiedBorder": "#ff0000",
+        "minimapGutter.modifiedBackground": "#00f7ff",
+        "minimapGutter.addedBackground": "#00ff00",
+        "minimapGutter.deletedBackground": "#ff0000",
+        "editorGutter.modifiedBackground": "#00f7ff",
+        "editorGutter.addedBackground": "#00ff00",
+        "editorGutter.deletedBackground": "#ff0000",
+        "editorOverviewRuler.modifiedForeground": "#00f7ff",
+        "editorOverviewRuler.addedForeground": "#00ff00",
+        "editorOverviewRuler.deletedForeground": "#ff0000"
     },
     "files.hotExit": "onExitAndWindowClose",
-    "files.trimTrailingWhitespace": true,
-    "diffEditor.ignoreTrimWhitespace": false,
     "editor.accessibilitySupport": "off",
     "[cpp]": {
         "editor.defaultFormatter": "ms-vscode.cpptools"
     },
     "search.followSymlinks": false,
-    "git.githubAuthentication": false,
     "remote.extensionKind": {
         "ms-azuretools.vscode-docker": "workspace"
     },
-    "editor.smoothScrolling": true,
-    "editor.mouseWheelScrollSensitivity": 3,
     "python.analysis.logLevel": "Information",
-    "python.linting.enabled": false,
     "python.dataScience.askForKernelRestart": false,
     "python.dataScience.alwaysScrollOnNewCell": true,
     "python.dataScience.changeDirOnImportExport": true,
@@ -91,7 +129,212 @@
     "task.quickOpen.showAll": true,
     "python.languageServer": "Pylance",
     "python.analysis.typeCheckingMode": "basic",
-    "workbench.activityBar.visible": true,
     "editor.minimap.maxColumn": 100,
-    "git.terminalAuthentication": false
+    "git.terminalAuthentication": false,
+    "jshint.reportWarningsAsErrors": true,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "git.ignoreLegacyWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "testMate.cpp.log.userId": "69d4c0be2975a5d5e614c3c9c8a497a2363ae221",
+    "testMate.cpp.log.logSentry": "disable_3",
+    // "editor.formatOnSave": true
+    "editor.codeActionsOnSave": {
+        "source.fixAll": false,
+        "source.fixAll.eslint": false,
+    },
+    "clangd.path": "/home/developer/.vscode-server/data/User/globalStorage/llvm-vs-code-extensions.vscode-clangd/install/10.0.0/clangd_10.0.0/bin/clangd",
+    "multiCommand.commands": [
+        {
+            "command": "multiCommand.gotoCurrentBreakpoint",
+            // "interval": 350,
+            "sequence": [
+                "workbench.debug.action.focusRepl",
+                "repl.action.acceptInput",
+                // following command clears the debug console if you wish
+                "workbench.debug.panel.action.clearReplAction"
+            ]
+        }
+    ],
+    "python.showStartPage": false,
+    "extensions.ignoreRecommendations": false,
+    "editor.semanticHighlighting.enabled": false,
+    "python.linting.flake8CategorySeverity.E": "Warning",
+    "python.analysis.extraPaths": [
+        "src",
+        "./AM003_analytical"
+    ],
+    "task.problemMatchers.neverPrompt": {
+        "shell": true
+    },
+    "github.gitAuthentication": false,
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "r.linting.enable": true,
+    "jshint.lintHTML": true,
+    "jshint.enable": false,
+    "remote.SSH.remotePlatform": {
+        "slbths01.lbtinnovations.com": "linux",
+        "slbtass01.lbtinnovations.com": "linux",
+        "controller": "linux",
+        "ass1": "linux",
+        "vm": "linux",
+        "bld": "linux",
+        "hs": "linux",
+        "ait": "linux"
+    },
+    "gitlens.views.lineHistory.enabled": true,
+    "peacock.favoriteColors": [
+        {
+            "name": "Angular Red",
+            "value": "#dd0531"
+        },
+        {
+            "name": "Azure Blue",
+            "value": "#007fff"
+        },
+        {
+            "name": "JavaScript Yellow",
+            "value": "#f9e64f"
+        },
+        {
+            "name": "Mandalorian Blue",
+            "value": "#1857a4"
+        },
+        {
+            "name": "Node Green",
+            "value": "#215732"
+        },
+        {
+            "name": "React Blue",
+            "value": "#61dafb"
+        },
+        {
+            "name": "Something Different",
+            "value": "#832561"
+        },
+        {
+            "name": "Svelte Orange",
+            "value": "#ff3d00"
+        },
+        {
+            "name": "Vue Green",
+            "value": "#42b883"
+        }
+    ],
+    "terminal.integrated.localEchoLatencyThreshold": -1,
+    "workbench.editor.decorations.colors": true,
+    "java.configuration.checkProjectSettingsExclusions": false,
+    "intelephense.format.braces": "allman",
+    "debug.javascript.autoAttachFilter": "smart",
+    "jest.pathToJest": "",
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "git-rebase-todo": "default"
+    },
+    "gitlens.advanced.repositorySearchDepth": 5,
+    "files.exclude": {
+        "**/__pycache__": true
+    },
+    "workbench.editor.limit.perEditorGroup": true,
+    "workbench.editor.limit.enabled": true,
+    "workbench.editor.limit.value": 9,
+    "redhat.telemetry.enabled": false,
+    "jenkins.pipeline.linter.connector.strictssl": false,
+    "terminal.integrated.fontSize": 16,
+    "terminal.integrated.tabs.enabled": true,
+    "scm.alwaysShowRepositories": true,
+    "scm.defaultViewMode": "tree",
+    "scm.inputFontSize": 14,
+    "workbench.sideBar.location": "right",
+    "java.format.enabled": false,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordWrap": "off",
+    "editor.detectIndentation": false,
+    "workbench.startupEditor": "none",
+    "partialDiff.enableTelemetry": false,
+    "workbench.editor.untitled.hint": "hidden",
+    "cSpell.language": "en",
+    "cSpell.enabled": true,
+    "eslint.format.enable": true,
+    "javascript.format.enable": false,
+    "[javascript]": {
+        "editor.defaultFormatter": "numso.prettier-standard-vscode",
+        "editor.formatOnSave": true
+    },
+    "prettier.useEditorConfig": false,
+    "prettier.requireConfig": true,
+    "[json]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "left"
+    },
+    "C_Cpp.enhancedColorization": "Disabled",
+    "editor.minimap.showSlider": "always",
+    "workbench.editor.untitled.experimentalLanguageDetection": true,
+    "cSpell.flagWords": [
+        "disk"
+    ],
+    "editor.bracketPairColorization.enabled": true,
+    "workbench.list.smoothScrolling": true,
+    "calva.paredit.hijackVSCodeDefaults": false,
+    "calva.paredit.defaultKeyMap": "original",
+    "autoHide.sideBarDelay": 100,
+    "autoHide.panelDelay": 0,
+    "autoHide.autoHideSideBar": false,
+    "xml.server.preferBinary": true,
+    "output.smartScroll.enabled": false,
+    "[jsonc]": {
+        "editor.defaultFormatter": "vscode.json-language-features"
+    },
+    "editor.find.autoFindInSelection": "multiline",
+    "terminal.integrated.wordSeparators": " ()[]{}',\"`─_",
+    "editor.wordSeparators": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "vim.iskeyword": "`~!@#$%^&*()-=+[{]}\\|;:'\",.<>/?",
+    "remote.SSH.showLoginTerminal": true,
+    "remote.SSH.useLocalServer": false,
+    "remote.SSH.maxReconnectionAttempts": 3,
+    "cmake.parallelJobs": 8,
+    "explorer.openEditors.sortOrder": "alphabetical",
+    "editor.mouseWheelZoom": true,
+    "workbench.list.mouseWheelScrollSensitivity": 6,
+    "editor.smoothScrolling": true,
+    "references.preferredLocation": "view",
+    "yaml.schemas": {
+        "file:///home/developer/.vscode-server/extensions/atlassian.atlascode-2.10.1/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml"
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "python.defaultInterpreterPath": "C:\\Users\\mhermann\\AppData\\Local\\Programs\\Python\\Python38\\python.exe",
+    "terminal.integrated.mouseWheelScrollSensitivity": 0.5,
+    "C_Cpp.workspaceSymbols": "All",
+    "search.showLineNumbers": true,
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "rainbow_csv.comment_prefix": "#",
+    "gitlens.defaultGravatarsStyle": "retro",
+    "gitlens.sortBranchesBy": "name:desc",
+    "search.useGlobalIgnoreFiles": true,
+    "search.useParentIgnoreFiles": true,
+    "files.eol": "\n",
+    "editor.mouseWheelScrollSensitivity": 2,
+    "window.zoomLevel": -1,
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "vscode.typescript-language-features"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "vscode.html-language-features"
+    },
+    "gitlens.integrations.enabled": true,
+    "gitlens.remotes": [
+        {
+            "domain": "git.lbtinnovations.com",
+            "type": "BitbucketServer",
+            // "protocol": "https",
+        }
+    ]
 }

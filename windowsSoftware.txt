@@ -1,7 +1,7 @@
 chrome
 AHK
 vscode
-conemu
+terminal
 git bash
 ditto
 7zip
@@ -12,12 +12,22 @@ python
 meld / WinMerge
 docker
 wsl
-Power Toys
-WinDirStat
-postman
-dbeaver
+VcXsrv
+PowerToys
+WinDirStat / WizTree? / Baobab (linux)
 spotify
+
 xnConvert
+Enterprise Architect
+Adobe Acrobat
+Fiddler
+Wireshark
+Grindstone
+HxD Hex Editor
+Logitech?
+Mockoon
+Postman
+Zoom
+dbeaver
+
 # Microsoft to-do
-# winmerge
-# AltDrag
